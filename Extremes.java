@@ -9,8 +9,8 @@ public class Extremes {
 	int num = input.nextInt();
 
 	int number = 0;
-	int minimum = 0;
-	int maximum = 0;
+	int minimum = number;
+	int maximum = number;
 
 	for (int count = 1; count <= num; count++) {
 
@@ -21,7 +21,7 @@ public class Extremes {
 	maximum = number;
 
 }	if (number < minimum) {
-	minimum = number;
+	minimum += number;
 
 }
 	System.out.println("The maximum number is " + maximum);
